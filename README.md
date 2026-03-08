@@ -22,7 +22,7 @@ The workflow covers the full experimentation pipeline: model definition, agent t
 
 ```text
 cartpole-dqn-variants/
-├── code.ipynb
+├── dqn-cartpole-comparison.ipynb
 ├── README.md
 ├── requirements.txt
 └── saved_models/            # generated after training
@@ -91,20 +91,6 @@ Typical outputs include:
 - a comparison table of mean and standard deviation of rewards,
 - saved PyTorch checkpoints,
 - rendered rollouts for trained policies.
-
-## Notes
-
-- The notebook installs Gymnasium directly in early cells for convenience, but for a clean GitHub project the dependencies are listed in `requirements.txt`.
-- Generated model weights and cached outputs do not need to be committed unless you want to publish trained checkpoints.
-- If you keep the external pretrained model section, document the expected external repository path so others can reproduce that part.
-
-## Future Improvements
-
-- add command-line training scripts outside the notebook,
-- log experiments with TensorBoard or Weights & Biases,
-- benchmark more environments,
-- compare replay and exploration hyperparameters more systematically,
-- add prioritized replay and noisy networks.
 
 ## License
 
